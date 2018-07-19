@@ -6,22 +6,20 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Detailed steps to implement this solution.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+More details on this can be found in my blog http://playandcodewith.me/tech-blogs/f/publish-your-angular-components
 
-## Build
+## Packaging
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `npm run packagr` to package the entire solution and you can find the `dist` folder.
 
-## Running unit tests
+## Publishing to NPM registry
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Before publishing your packages in npm registry, please make sure you have a valid account in https://npmjs.com. Once you setup your account, in run the command `npm login` to login to npm registry. You need to provide your username, password and email id to login to npm. 
 
-## Running end-to-end tests
+Once you login to npm, then you are ready to publish your package. Run the command `npm publish dist` to publish the dist folder to the npm registry.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Fonts, Images or assets
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+This does not package your font files, images or any other assets. It is recommended to have these in the `cdn` and refer the same from the code.
